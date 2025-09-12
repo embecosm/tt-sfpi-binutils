@@ -3523,6 +3523,11 @@ const struct riscv_opcode riscv_opcodes[] =
 {"sf.vfnrclip.xu.f.qf", 0, INSN_CLASS_XSFVFNRCLIPXFQF, "Vd,Vt,S", MATCH_SFVFNRCLIPXUFQF, MASK_SFVFNRCLIPXUFQF, match_opcode, 0},
 {"sf.vfnrclip.x.f.qf",  0, INSN_CLASS_XSFVFNRCLIPXFQF, "Vd,Vt,S", MATCH_SFVFNRCLIPXFQF, MASK_SFVFNRCLIPXFQF, match_opcode, 0},
 
+{"ttrocc.cs_alloc",  32, INSN_CLASS_XTTROCC, "rd", MATCH_XTTROC_CS_ALLOC, MASK_XTTROC_CS_ALLOC, match_opcode, 0},
+{"ttrocc.cs_dealloc",  32, INSN_CLASS_XTTROCC, "s1", MATCH_XTTROC_CS_DEALLOC, MASK_XTTROC_CS_DEALLOC, match_opcode, 0},
+{"ttrocc.cs_save",  32, INSN_CLASS_XTTROCC, "s1", MATCH_XTTROC_CS_SAVE, MASK_XTTROC_CS_SAVE, match_opcode, 0},
+{"ttrocc.cs_restore",  32, INSN_CLASS_XTTROCC, "s1", MATCH_XTTROC_CS_RESTORE, MASK_XTTROC_CS_RESTORE, match_opcode, 0},
+
 #include "riscv-opc-sfpu-insns.h"
 
 /* Terminate the list.  */
