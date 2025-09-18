@@ -1745,29 +1745,29 @@ print_insn_args (const char *oparg, insn_t l, bfd_vma pc, disassemble_info *info
 		    }
 		  break;
 		}
-	    case 't': /* Vendor-specific (tenstorrent) operands.  */
-	      switch (*++oparg)
-		{
-		case 'd':
-		  print (info->stream, dis_style_register, "0x%x",
-			 (unsigned) EXTRACT_OPERAND (RD, l));
-		  break;
-		case 's':
-		  switch (*++oparg)
-		    {
-		    case '2':
-		      print (info->stream, dis_style_register, "0x%x",
-			     (unsigned) EXTRACT_OPERAND (RS2, l));
-		      break;
-		    case '1':
-		      print (info->stream, dis_style_register, "0x%x",
-			     (unsigned) EXTRACT_OPERAND (RS1, l));
-		      break;
-		    }
-		  break;
-		}
-
-	      break;
+//	    case 't': /* Vendor-specific (tenstorrent) operands.  */
+//	      switch (*++oparg)
+//		{
+//		case 'd':
+//		  print (info->stream, dis_style_register, "0x%x",
+//			 (unsigned) EXTRACT_OPERAND (RD, l));
+//		  break;
+//		case 's':
+//		  switch (*++oparg)
+//		    {
+//		    case '2':
+//		      print (info->stream, dis_style_register, "0x%x",
+//			     (unsigned) EXTRACT_OPERAND (RS2, l));
+//		      break;
+//		    case '1':
+//		      print (info->stream, dis_style_register, "0x%x",
+//			     (unsigned) EXTRACT_OPERAND (RS1, l));
+//		      break;
+//		    }
+//		  break;
+//		}
+//
+//	      break;
 	    default:
 	      goto undefined_modifier;
 	    }

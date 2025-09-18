@@ -2124,22 +2124,22 @@ validate_riscv_insn (const struct riscv_opcode *opc, int length)
 		  default:
 		    goto unknown_validate_operand;
 		}
-	    case 't': /* Vendor-specific (SiFive) operands.  */
-	      switch (*++oparg)
-		{
-		  case 'd': used_bits |= USE_BITS(OP_MASK_RD, OP_SH_RD); break;
-		  case 's':
-		    switch (*++oparg)
-		      {
-			case '2': used_bits |= USE_BITS(OP_MASK_RS2, OP_SH_RS2); break;
-			case '1': used_bits |= USE_BITS(OP_MASK_RS1, OP_SH_RS1); break;
-			default:
-			  goto unknown_validate_operand;
-		      }
-		    break;
-		  default:
-		    goto unknown_validate_operand;
-		}
+//	    case 't': /* Vendor-specific (SiFive) operands.  */
+//	      switch (*++oparg)
+//		{
+//		  case 'd': used_bits |= USE_BITS(OP_MASK_RD, OP_SH_RD); break;
+//		  case 's':
+//		    switch (*++oparg)
+//		      {
+//			case '2': used_bits |= USE_BITS(OP_MASK_RS2, OP_SH_RS2); break;
+//			case '1': used_bits |= USE_BITS(OP_MASK_RS1, OP_SH_RS1); break;
+//			default:
+//			  goto unknown_validate_operand;
+//		      }
+//		    break;
+//		  default:
+//		    goto unknown_validate_operand;
+//		}
 		break;
 	    default:
 	      goto unknown_validate_operand;
@@ -8525,16 +8525,16 @@ riscv_ip (char *str, struct riscv_cl_insn *ip, expressionS *imm_expr,
 #undef UIMM_BITFIELD_VAL
 #undef ENCODE_UIMM_BIT_FIELD
 		  break;
-		case 't': /* Vendor-specific (tenstorrent) operands.  */
-		  switch (*oparg)
-		{
-		  case 'd':
-		    // TODO
-		  case 's':
-		    // TODO
-		  default:
-		    break;
-		}
+		//case 't': /* Vendor-specific (tenstorrent) operands.  */
+		//  switch (*oparg)
+		//{
+		//  case 'd':
+		//    // TODO
+		//  case 's':
+		//    // TODO
+		//  default:
+		//    break;
+		//}
 
 		default:
 		  goto unknown_riscv_ip_operand;
