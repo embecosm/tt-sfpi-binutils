@@ -3528,6 +3528,23 @@ const struct riscv_opcode riscv_opcodes[] =
 {"ttrocc.cs_save",  32, INSN_CLASS_XTTROCC, "s", MATCH_XTTROCC_CS_SAVE, MASK_XTTROCC_CS_SAVE, match_opcode, 0},
 {"ttrocc.cs_restore",  32, INSN_CLASS_XTTROCC, "s", MATCH_XTTROCC_CS_RESTORE, MASK_XTTROCC_CS_RESTORE, match_opcode, 0},
 
+{"ttrocc.addrgen_wr_reg",  32, INSN_CLASS_XTTROCC, "s", MATCH_XTTROCC_ADDRGEN_WR_REG, MASK_XTTROCC_ADDRGEN_WR_REG, match_opcode, 0},
+{"ttrocc.addrgen_rd_reg",  32, INSN_CLASS_XTTROCC, "d", MATCH_XTTROCC_ADDRGEN_RD_REG, MASK_XTTROCC_ADDRGEN_RD_REG, match_opcode, 0},
+{"ttrocc.addrgen_reset",  32, INSN_CLASS_XTTROCC, "", MATCH_XTTROCC_ADDRGEN_RESET, MASK_XTTROCC_ADDRGEN_RESET, match_opcode, 0},
+{"ttrocc.addrgen_reset_counters",  32, INSN_CLASS_XTTROCC, "s", MATCH_XTTROCC_ADDRGEN_RESET_COUNTERS, MASK_XTTROCC_ADDRGEN_RESET_COUNTERS, match_opcode, 0},
+{"ttrocc.addrgen_peek_src",  32, INSN_CLASS_XTTROCC, "d", MATCH_XTTROCC_ADDRGEN_PEEK_SRC, MASK_XTTROCC_ADDRGEN_PEEK_SRC, match_opcode, 0},
+{"ttrocc.addrgen_pop_src",  32, INSN_CLASS_XTTROCC, "d,s", MATCH_XTTROCC_ADDRGEN_POP_SRC, MASK_XTTROCC_ADDRGEN_POP_SRC, match_opcode, 0},
+{"ttrocc.addrgen_pop_x_src",  32, INSN_CLASS_XTTROCC, "d,s", MATCH_XTTROCC_ADDRGEN_POP_X_SRC, MASK_XTTROCC_ADDRGEN_POP_X_SRC, match_opcode, 0},
+{"ttrocc.addrgen_peek_dest",  32, INSN_CLASS_XTTROCC, "d", MATCH_XTTROCC_ADDRGEN_PEEK_DEST, MASK_XTTROCC_ADDRGEN_PEEK_DEST, match_opcode, 0},
+{"ttrocc.addrgen_pop_x_dest",  32, INSN_CLASS_XTTROCC, "d,s", MATCH_XTTROCC_ADDRGEN_POP_X_DEST, MASK_XTTROCC_ADDRGEN_POP_X_DEST, match_opcode, 0},
+{"ttrocc.addrgen_pop_both",  32, INSN_CLASS_XTTROCC, "d,s,t", MATCH_XTTROCC_ADDRGEN_POP_BOTH, MASK_XTTROCC_ADDRGEN_POP_BOTH, match_opcode, 0},
+{"ttrocc.addrgen_push_src",  32, INSN_CLASS_XTTROCC, "", MATCH_XTTROCC_ADDRGEN_PUSH_SRC, MASK_XTTROCC_ADDRGEN_PUSH_SRC, match_opcode, 0},
+{"ttrocc.addrgen_push_src_pop_x",  32, INSN_CLASS_XTTROCC, "s", MATCH_XTTROCC_ADDRGEN_PUSH_SRC_POP_X, MASK_XTTROCC_ADDRGEN_PUSH_SRC_POP_X, match_opcode, 0},
+{"ttrocc.addrgen_push_dest",  32, INSN_CLASS_XTTROCC, "", MATCH_XTTROCC_ADDRGEN_PUSH_DEST, MASK_XTTROCC_ADDRGEN_PUSH_DEST, match_opcode, 0},
+{"ttrocc.addrgen_push_dest_pop_x",  32, INSN_CLASS_XTTROCC, "s", MATCH_XTTROCC_ADDRGEN_PUSH_DEST_POP_X, MASK_XTTROCC_ADDRGEN_PUSH_DEST_POP_X, match_opcode, 0},
+{"ttrocc.addrgen_push_both",  32, INSN_CLASS_XTTROCC, "", MATCH_XTTROCC_ADDRGEN_PUSH_BOTH, MASK_XTTROCC_ADDRGEN_PUSH_BOTH, match_opcode, 0},
+{"ttrocc.addrgen_push_both_pop_x",  32, INSN_CLASS_XTTROCC, "s,t", MATCH_XTTROCC_ADDRGEN_PUSH_BOTH_POP_X, MASK_XTTROCC_ADDRGEN_PUSH_BOTH_POP_X, match_opcode, 0},
+
 #include "riscv-opc-sfpu-insns.h"
 
 /* Terminate the list.  */
