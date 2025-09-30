@@ -3545,6 +3545,75 @@ const struct riscv_opcode riscv_opcodes[] =
 {"ttrocc.addrgen_push_both",  0, INSN_CLASS_XTTROCC, "", MATCH_XTTROCC_ADDRGEN_PUSH_BOTH, MASK_XTTROCC_ADDRGEN_PUSH_BOTH, match_opcode, 0},
 {"ttrocc.addrgen_push_both_pop_x",  0, INSN_CLASS_XTTROCC, "s,t", MATCH_XTTROCC_ADDRGEN_PUSH_BOTH_POP_X, MASK_XTTROCC_ADDRGEN_PUSH_BOTH_POP_X, match_opcode, 0},
 
+// --- reg/8 = 0 ---
+{"ttrocc.cmdbuf_0_wr_reg_0", 0, INSN_CLASS_XTTROCC, "", MATCH_XTTROCC_REG0_FN7, MASK_XTTROCC_CMDBUF_WR_REG, match_opcode, 0},
+{"ttrocc.cmdbuf_0_wr_reg_1", 0, INSN_CLASS_XTTROCC, "", MATCH_XTTROCC_REG1_FN7, MASK_XTTROCC_CMDBUF_WR_REG, match_opcode, 0},
+{"ttrocc.cmdbuf_0_wr_reg_2", 0, INSN_CLASS_XTTROCC, "", MATCH_XTTROCC_REG2_FN7, MASK_XTTROCC_CMDBUF_WR_REG, match_opcode, 0},
+{"ttrocc.cmdbuf_0_wr_reg_3", 0, INSN_CLASS_XTTROCC, "", MATCH_XTTROCC_REG3_FN7, MASK_XTTROCC_CMDBUF_WR_REG, match_opcode, 0},
+{"ttrocc.cmdbuf_0_wr_reg_4", 0, INSN_CLASS_XTTROCC, "", MATCH_XTTROCC_REG4_FN7, MASK_XTTROCC_CMDBUF_WR_REG, match_opcode, 0},
+{"ttrocc.cmdbuf_0_wr_reg_5", 0, INSN_CLASS_XTTROCC, "", MATCH_XTTROCC_REG5_FN7, MASK_XTTROCC_CMDBUF_WR_REG, match_opcode, 0},
+{"ttrocc.cmdbuf_0_wr_reg_6", 0, INSN_CLASS_XTTROCC, "", MATCH_XTTROCC_REG6_FN7, MASK_XTTROCC_CMDBUF_WR_REG, match_opcode, 0},
+{"ttrocc.cmdbuf_0_wr_reg_7", 0, INSN_CLASS_XTTROCC, "", MATCH_XTTROCC_REG7_FN7, MASK_XTTROCC_CMDBUF_WR_REG, match_opcode, 0},
+
+// --- reg/8 = 1 ---
+{"ttrocc.cmdbuf_0_wr_reg_8", 0, INSN_CLASS_XTTROCC, "", MATCH_XTTROCC_REG8_FN7, MASK_XTTROCC_CMDBUF_WR_REG, match_opcode, 0},
+{"ttrocc.cmdbuf_0_wr_reg_9", 0, INSN_CLASS_XTTROCC, "", MATCH_XTTROCC_REG9_FN7, MASK_XTTROCC_CMDBUF_WR_REG, match_opcode, 0},
+{"ttrocc.cmdbuf_0_wr_reg_10", 0, INSN_CLASS_XTTROCC, "", MATCH_XTTROCC_REG10_FN7, MASK_XTTROCC_CMDBUF_WR_REG, match_opcode, 0},
+{"ttrocc.cmdbuf_0_wr_reg_11", 0, INSN_CLASS_XTTROCC, "", MATCH_XTTROCC_REG11_FN7, MASK_XTTROCC_CMDBUF_WR_REG, match_opcode, 0},
+{"ttrocc.cmdbuf_0_wr_reg_12", 0, INSN_CLASS_XTTROCC, "", MATCH_XTTROCC_REG12_FN7, MASK_XTTROCC_CMDBUF_WR_REG, match_opcode, 0},
+{"ttrocc.cmdbuf_0_wr_reg_13", 0, INSN_CLASS_XTTROCC, "", MATCH_XTTROCC_REG13_FN7, MASK_XTTROCC_CMDBUF_WR_REG, match_opcode, 0},
+{"ttrocc.cmdbuf_0_wr_reg_14", 0, INSN_CLASS_XTTROCC, "", MATCH_XTTROCC_REG14_FN7, MASK_XTTROCC_CMDBUF_WR_REG, match_opcode, 0},
+{"ttrocc.cmdbuf_0_wr_reg_15", 0, INSN_CLASS_XTTROCC, "", MATCH_XTTROCC_REG15_FN7, MASK_XTTROCC_CMDBUF_WR_REG, match_opcode, 0},
+
+// --- reg/8 = 2 ---
+{"ttrocc.cmdbuf_0_wr_reg_16", 0, INSN_CLASS_XTTROCC, "", MATCH_XTTROCC_REG16_FN7, MASK_XTTROCC_CMDBUF_WR_REG, match_opcode, 0},
+{"ttrocc.cmdbuf_0_wr_reg_17", 0, INSN_CLASS_XTTROCC, "", MATCH_XTTROCC_REG17_FN7, MASK_XTTROCC_CMDBUF_WR_REG, match_opcode, 0},
+{"ttrocc.cmdbuf_0_wr_reg_18", 0, INSN_CLASS_XTTROCC, "", MATCH_XTTROCC_REG18_FN7, MASK_XTTROCC_CMDBUF_WR_REG, match_opcode, 0},
+{"ttrocc.cmdbuf_0_wr_reg_19", 0, INSN_CLASS_XTTROCC, "", MATCH_XTTROCC_REG19_FN7, MASK_XTTROCC_CMDBUF_WR_REG, match_opcode, 0},
+{"ttrocc.cmdbuf_0_wr_reg_20", 0, INSN_CLASS_XTTROCC, "", MATCH_XTTROCC_REG20_FN7, MASK_XTTROCC_CMDBUF_WR_REG, match_opcode, 0},
+{"ttrocc.cmdbuf_0_wr_reg_21", 0, INSN_CLASS_XTTROCC, "", MATCH_XTTROCC_REG21_FN7, MASK_XTTROCC_CMDBUF_WR_REG, match_opcode, 0},
+{"ttrocc.cmdbuf_0_wr_reg_22", 0, INSN_CLASS_XTTROCC, "", MATCH_XTTROCC_REG22_FN7, MASK_XTTROCC_CMDBUF_WR_REG, match_opcode, 0},
+{"ttrocc.cmdbuf_0_wr_reg_23", 0, INSN_CLASS_XTTROCC, "", MATCH_XTTROCC_REG23_FN7, MASK_XTTROCC_CMDBUF_WR_REG, match_opcode, 0},
+
+// --- reg/8 = 3 ---
+{"ttrocc.cmdbuf_0_wr_reg_24", 0, INSN_CLASS_XTTROCC, "", MATCH_XTTROCC_REG24_FN7, MASK_XTTROCC_CMDBUF_WR_REG, match_opcode, 0},
+{"ttrocc.cmdbuf_0_wr_reg_25", 0, INSN_CLASS_XTTROCC, "", MATCH_XTTROCC_REG25_FN7, MASK_XTTROCC_CMDBUF_WR_REG, match_opcode, 0},
+{"ttrocc.cmdbuf_0_wr_reg_26", 0, INSN_CLASS_XTTROCC, "", MATCH_XTTROCC_REG26_FN7, MASK_XTTROCC_CMDBUF_WR_REG, match_opcode, 0},
+{"ttrocc.cmdbuf_0_wr_reg_27", 0, INSN_CLASS_XTTROCC, "", MATCH_XTTROCC_REG27_FN7, MASK_XTTROCC_CMDBUF_WR_REG, match_opcode, 0},
+{"ttrocc.cmdbuf_0_wr_reg_28", 0, INSN_CLASS_XTTROCC, "", MATCH_XTTROCC_REG28_FN7, MASK_XTTROCC_CMDBUF_WR_REG, match_opcode, 0},
+{"ttrocc.cmdbuf_0_wr_reg_29", 0, INSN_CLASS_XTTROCC, "", MATCH_XTTROCC_REG29_FN7, MASK_XTTROCC_CMDBUF_WR_REG, match_opcode, 0},
+{"ttrocc.cmdbuf_0_wr_reg_30", 0, INSN_CLASS_XTTROCC, "", MATCH_XTTROCC_REG30_FN7, MASK_XTTROCC_CMDBUF_WR_REG, match_opcode, 0},
+{"ttrocc.cmdbuf_0_wr_reg_31", 0, INSN_CLASS_XTTROCC, "", MATCH_XTTROCC_REG31_FN7, MASK_XTTROCC_CMDBUF_WR_REG, match_opcode, 0},
+
+// --- reg/8 = 4 ---
+{"ttrocc.cmdbuf_0_wr_reg_32", 0, INSN_CLASS_XTTROCC, "", MATCH_XTTROCC_REG32_FN7, MASK_XTTROCC_CMDBUF_WR_REG, match_opcode, 0},
+{"ttrocc.cmdbuf_0_wr_reg_33", 0, INSN_CLASS_XTTROCC, "", MATCH_XTTROCC_REG33_FN7, MASK_XTTROCC_CMDBUF_WR_REG, match_opcode, 0},
+{"ttrocc.cmdbuf_0_wr_reg_34", 0, INSN_CLASS_XTTROCC, "", MATCH_XTTROCC_REG34_FN7, MASK_XTTROCC_CMDBUF_WR_REG, match_opcode, 0},
+{"ttrocc.cmdbuf_0_wr_reg_35", 0, INSN_CLASS_XTTROCC, "", MATCH_XTTROCC_REG35_FN7, MASK_XTTROCC_CMDBUF_WR_REG, match_opcode, 0},
+{"ttrocc.cmdbuf_0_wr_reg_36", 0, INSN_CLASS_XTTROCC, "", MATCH_XTTROCC_REG36_FN7, MASK_XTTROCC_CMDBUF_WR_REG, match_opcode, 0},
+{"ttrocc.cmdbuf_0_wr_reg_37", 0, INSN_CLASS_XTTROCC, "", MATCH_XTTROCC_REG37_FN7, MASK_XTTROCC_CMDBUF_WR_REG, match_opcode, 0},
+{"ttrocc.cmdbuf_0_wr_reg_38", 0, INSN_CLASS_XTTROCC, "", MATCH_XTTROCC_REG38_FN7, MASK_XTTROCC_CMDBUF_WR_REG, match_opcode, 0},
+{"ttrocc.cmdbuf_0_wr_reg_39", 0, INSN_CLASS_XTTROCC, "", MATCH_XTTROCC_REG39_FN7, MASK_XTTROCC_CMDBUF_WR_REG, match_opcode, 0},
+
+// --- reg/8 = 5 ---
+{"ttrocc.cmdbuf_0_wr_reg_40", 0, INSN_CLASS_XTTROCC, "", MATCH_XTTROCC_REG40_FN7, MASK_XTTROCC_CMDBUF_WR_REG, match_opcode, 0},
+{"ttrocc.cmdbuf_0_wr_reg_41", 0, INSN_CLASS_XTTROCC, "", MATCH_XTTROCC_REG41_FN7, MASK_XTTROCC_CMDBUF_WR_REG, match_opcode, 0},
+{"ttrocc.cmdbuf_0_wr_reg_42", 0, INSN_CLASS_XTTROCC, "", MATCH_XTTROCC_REG42_FN7, MASK_XTTROCC_CMDBUF_WR_REG, match_opcode, 0},
+{"ttrocc.cmdbuf_0_wr_reg_43", 0, INSN_CLASS_XTTROCC, "", MATCH_XTTROCC_REG43_FN7, MASK_XTTROCC_CMDBUF_WR_REG, match_opcode, 0},
+{"ttrocc.cmdbuf_0_wr_reg_44", 0, INSN_CLASS_XTTROCC, "", MATCH_XTTROCC_REG44_FN7, MASK_XTTROCC_CMDBUF_WR_REG, match_opcode, 0},
+{"ttrocc.cmdbuf_0_wr_reg_45", 0, INSN_CLASS_XTTROCC, "", MATCH_XTTROCC_REG45_FN7, MASK_XTTROCC_CMDBUF_WR_REG, match_opcode, 0},
+{"ttrocc.cmdbuf_0_wr_reg_46", 0, INSN_CLASS_XTTROCC, "", MATCH_XTTROCC_REG46_FN7, MASK_XTTROCC_CMDBUF_WR_REG, match_opcode, 0},
+{"ttrocc.cmdbuf_0_wr_reg_47", 0, INSN_CLASS_XTTROCC, "", MATCH_XTTROCC_REG47_FN7, MASK_XTTROCC_CMDBUF_WR_REG, match_opcode, 0},
+
+// --- reg/8 = 6 ---
+{"ttrocc.cmdbuf_0_wr_reg_48", 0, INSN_CLASS_XTTROCC, "", MATCH_XTTROCC_REG48_FN7, MASK_XTTROCC_CMDBUF_WR_REG, match_opcode, 0},
+{"ttrocc.cmdbuf_0_wr_reg_49", 0, INSN_CLASS_XTTROCC, "", MATCH_XTTROCC_REG49_FN7, MASK_XTTROCC_CMDBUF_WR_REG, match_opcode, 0},
+{"ttrocc.cmdbuf_0_wr_reg_50", 0, INSN_CLASS_XTTROCC, "", MATCH_XTTROCC_REG50_FN7, MASK_XTTROCC_CMDBUF_WR_REG, match_opcode, 0},
+{"ttrocc.cmdbuf_0_wr_reg_51", 0, INSN_CLASS_XTTROCC, "", MATCH_XTTROCC_REG51_FN7, MASK_XTTROCC_CMDBUF_WR_REG, match_opcode, 0},
+{"ttrocc.cmdbuf_0_wr_reg_52", 0, INSN_CLASS_XTTROCC, "", MATCH_XTTROCC_REG52_FN7, MASK_XTTROCC_CMDBUF_WR_REG, match_opcode, 0},
+{"ttrocc.cmdbuf_0_wr_reg_53", 0, INSN_CLASS_XTTROCC, "", MATCH_XTTROCC_REG53_FN7, MASK_XTTROCC_CMDBUF_WR_REG, match_opcode, 0},
+{"ttrocc.cmdbuf_0_wr_reg_54", 0, INSN_CLASS_XTTROCC, "", MATCH_XTTROCC_REG54_FN7, MASK_XTTROCC_CMDBUF_WR_REG, match_opcode, 0},
+
 #include "riscv-opc-sfpu-insns.h"
 
 /* Terminate the list.  */
