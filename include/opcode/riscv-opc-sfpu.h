@@ -292,6 +292,9 @@
 #define MATCH_SFPSTREAMWRCFG            0xb7000003
 #define MASK_SFPSTREAMWRCFG             0xffffffff
 
+#define MATCH_CMDBUF_WR_REG            0x0000200b
+#define MASK_CMDBUF_WR_REG             0x0000707f
+
 #define SFP_OPCODE_END 0xB9
 
 #endif  // RISCV_OPC_SFPU_H
