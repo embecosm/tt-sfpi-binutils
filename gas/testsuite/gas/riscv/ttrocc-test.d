@@ -24,3 +24,5 @@ Disassembly of section .text:
 [ 	]+34:[ 	]+7c00468b[ 	]+ttrocc.cmdbuf_get_vc_space[ 	]+a3,0
 [ 	]+38:[ 	]+7c05e50b[ 	]+ttrocc.cmdbuf_get_vc_space_vc[ 	]+a0,0,a1
 [ 	]+3c:[ 	]+fc05e50b[ 	]+ttrocc.cmdbuf_get_vc_space_vc[ 	]+a0,1,a1
+[ 	]+40:[ 	]+7a00450b[ 	]+ttrocc.cmdbuf_wr_sent[ 	]+a0,0
+[ 	]+44:[ 	]+fa00450b[ 	]+ttrocc.cmdbuf_wr_sent[ 	]+a0,1

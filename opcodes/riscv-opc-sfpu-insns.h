@@ -281,6 +281,7 @@
 
 {"ttrocc.cmdbuf_get_vc_space",	   0, INSN_CLASS_XTTROCC, "d,Jxd0", MATCH_CMDBUF_GET_VC_SPACE, MASK_CMDBUF_GET_VC_SPACE, match_opcode, 0},
 {"ttrocc.cmdbuf_get_vc_space_vc",  0, INSN_CLASS_XTTROCC, "d,Jxd0,s", MATCH_CMDBUF_GET_VC_SPACE_VC, MASK_CMDBUF_GET_VC_SPACE_VC, match_opcode, 0},
+{"ttrocc.cmdbuf_wr_sent",	   0, INSN_CLASS_XTTROCC, "d,Jxd0", MATCH_CMDBUF_WR_SENT, MASK_CMDBUF_WR_SENT, match_opcode, 0},
 {"ttrocc.cmdbuf_wr_reg",	   0, INSN_CLASS_XTTROCC, "d,Jxd0,Jxd1,s,t", MATCH_CMDBUF_WR_REG, MASK_CMDBUF_WR_REG, match_opcode, 0},
 {"ttrocc.cmdbuf_rd_reg",	   0, INSN_CLASS_XTTROCC, "d,Jxd0,Jxd1,s,t", MATCH_CMDBUF_RD_REG, MASK_CMDBUF_RD_REG, match_opcode, 0},
 
