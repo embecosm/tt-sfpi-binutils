@@ -18,3 +18,6 @@ target:
     ttrocc.cmdbuf_get_vc_space a0, 0
     ttrocc.cmdbuf_get_vc_space a3, 1
     ttrocc.cmdbuf_get_vc_space a3, 0
+
+    ttrocc.cmdbuf_get_vc_space_vc a0, 0, a1
+    ttrocc.cmdbuf_get_vc_space_vc a0, 1, a1
