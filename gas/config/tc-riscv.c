@@ -8158,13 +8158,13 @@ riscv_ip (char *str, struct riscv_cl_insn *ip, expressionS *imm_expr,
 			  if (my_getSmallExpression (imm_expr, imm_reloc, asarg, p)
 			      || imm_expr->X_op != O_constant
 			      || imm_expr->X_add_number < 0
-			      || imm_expr->X_add_number > 54)
+			      || imm_expr->X_add_number > 63)
 			    {
 			      as_bad (_("bad value for reg_index field, "
-					"values and 0...54"));
+					"values and 0...63"));
 			      break;
 			    }
-			  INSERT_OPERAND (REG_VALUE, *ip, imm_expr->X_add_number / 8);
+			  INSERT_OPERAND (REG_VALUE, *ip, imm_expr->X_add_number);
 			  imm_expr->X_op = O_absent;
 			  asarg = expr_parse_end;
 			  break;
