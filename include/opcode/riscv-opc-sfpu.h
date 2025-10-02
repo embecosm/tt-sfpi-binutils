@@ -295,6 +295,9 @@
 #define MATCH_CMDBUF_WR_REG            0x0000200b
 #define MASK_CMDBUF_WR_REG             0x0000707f
 
+#define MATCH_CMDBUF_RD_REG            0x0000400b
+#define MASK_CMDBUF_RD_REG             0x0000707f
+
 #define SFP_OPCODE_END 0xB9
 
 #endif  // RISCV_OPC_SFPU_H

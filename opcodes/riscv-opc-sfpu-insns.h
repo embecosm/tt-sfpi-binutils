@@ -280,5 +280,6 @@
 {"ttstreamwrcfg", 0, INSN_CLASS_XTTBH, "Jxb2,Jxb3,Jxb4",        MATCH_SFPSTREAMWRCFG, MASK_SFPSTREAMWRCFG, sfp_match_opcode, INSN_ALIAS },
 
 {"ttrocc.cmdbuf_wr_reg",  0, INSN_CLASS_XTTROCC, "d,Jxd0,Jxd1,s,t", MATCH_CMDBUF_WR_REG, MASK_CMDBUF_WR_REG, match_opcode, 0},
+{"ttrocc.cmdbuf_rd_reg",  0, INSN_CLASS_XTTROCC, "d,Jxd0,Jxd1,s,t", MATCH_CMDBUF_RD_REG, MASK_CMDBUF_RD_REG, match_opcode, 0},
 
 #endif  // RISCV_OPC_SFPU_INSNS_H
