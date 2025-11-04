@@ -8161,10 +8161,10 @@ riscv_ip (char *str, struct riscv_cl_insn *ip, expressionS *imm_expr,
 			  if (my_getSmallExpression (imm_expr, imm_reloc, asarg, p)
 			      || imm_expr->X_op != O_constant
 			      || imm_expr->X_add_number < 0
-			      || imm_expr->X_add_number > 63)
+			      || imm_expr->X_add_number > 48)
 			    {
 			      as_bad (_("bad value for reg_index field, "
-					"values and 0...63"));
+					"values and 0...48"));
 			      break;
 			    }
 			  INSERT_OPERAND (REG_VALUE, *ip, imm_expr->X_add_number);
@@ -8191,10 +8191,10 @@ riscv_ip (char *str, struct riscv_cl_insn *ip, expressionS *imm_expr,
 			  if (my_getSmallExpression (imm_expr, imm_reloc, asarg, p)
 			      || imm_expr->X_op != O_constant
 			      || imm_expr->X_add_number < 0
-			      || imm_expr->X_add_number > 31)
+			      || imm_expr->X_add_number > 24)
 			    {
 			      as_bad (_("bad value for reg field, "
-					"values and 0...31"));
+					"values and 0...24"));
 			      break;
 			    }
 			  INSERT_OPERAND (REG_ADDRGEN, *ip, imm_expr->X_add_number);
